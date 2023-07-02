@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Modak&family=Roboto:wght@100;300;400;500;700;900&family=Rock+Salt&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #69974E;
+    --sc-color: #fff;
+    --normal: 1.1em;
+    --title: 1.7em;
+}
+body{
+   width: 100vw;
+   height: auto;
+   overflow-x: hidden;
+   outline: hidden;
+   position: relative;
+   font-family: 'Roboto', sans-serif;
+}
+section{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.container{
+    width: 80%;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+.container .title{
+    padding: .5em 0;
+    margin-bottom: 1em;
+    text-align: center;
+    position: relative;
+}
+.container .title h1{
+    position: relative;
+    font-size: var(--title);
+    text-transform: capitalize;
+    color: #AB624D;
+    z-index: 1;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    background: rgb(105, 151, 78, 0.95);
+    /* backdrop-filter: blur(5px); */
+    color: var(--sc-color);
+    z-index: 10;
+}
+nav label{
+    font-size: 1.4em;
+    font-weight: 200;
+    font-family: 'Lilita One', cursive;
+    padding-left: 1em;
+    z-index: 11;
+}
+nav .icon{
+    font-size: 1.5em;
+    cursor: pointer;
+    padding-right: 1em;
+    color: var(--sc-color);
+    z-index: 11;
+}
+nav ul{
+    position: absolute;
+    top: -75vh;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: left;
+    list-style: none;
+    margin: 0 auto;
+    background: rgba(105, 151, 78, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 2em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transition: .7s all ease-in-out;
+    z-index: 10;
+}
+nav ul a{
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.4em;
+    font-family: 'Lilita One', cursive;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: left;
+    color: var(--sc-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#home{
+    background: var(--bg-color);
+    height: 80vh;
+}
+#home header{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 1;
+}
+header span{
+    background: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: var(--sc-color);
+}
+#home header h1{
+    font-size: 10em;
+    font-weight: 200;
+    font-family: 'Lilita One', cursive;
+    line-height: 70%;
+}
+.img{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 10em;
+    height: 10em;
+    z-index: 2;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.wrapper .image{
+    width: 30em;
+}
+.wrapper .text{
+    width: 30em;
+}
+.wrapper .text p{
+    text-align: justify;
+    font-size: var(--normal);
+}
+.about .title h1::before{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    content: "about us";
+    width: 100%;
+    height: 100%;
+    font-size: 1.7em;
+    font-family: 'Modak', cursive;
+    font-weight: 200;
+    color: rgba(105, 151, 78, .3);
+    z-index: -1;
+}
+.roadmap .title h1::before{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    content: "roadmap";
+    width: 100%;
+    height: 100%;
+    font-size: 1.7em;
+    font-family: 'Modak', cursive;
+    font-weight: 200;
+    color: rgba(105, 151, 78, .3);
+    z-index: -1;
+}
+.token .title h1::before{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    content: "tokenomics";
+    width: 100%;
+    height: 100%;
+    font-size: 1.7em;
+    font-family: 'Modak', cursive;
+    font-weight: 200;
+    color: rgba(105, 151, 78, .3);
+    z-index: -1;
+}
+.community .title h1::before{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    content: "our community";
+    width: 100%;
+    height: 100%;
+    font-size: 1.4em;
+    font-family: 'Modak', cursive;
+    font-weight: 200;
+    color: rgba(105, 151, 78, .3);
+    z-index: -1;
+}
+#roadmap .box{
+    padding: 1em;
+    /* border: 1px solid #000; */
+    width: 15em;
+    height: 12em;
+    position: relative;
+    overflow: hidden;
+    outline: hidden;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+.phase{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, 
+    var(--sc-color) 6%,
+    var(--bg-color) 94%
+    );
+    transition: 1s all ease-in-out;
+}
+#roadmap .box:hover .phase{
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3em;
+    border-radius: 1em;
+}
+.phase h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+    width: 100%;
+    height: 100%;
+    color:#AB624D;
+    font-family: 'Rock Salt', cursive;
+    transition: 1s all ease-in-out;
+    font-size: 3em;
+}
+#roadmap .box:hover .phase h1{
+    font-size: 1.2em;
+}
+#roadmap .box h2{
+    color: #69974E;
+    text-transform: uppercase;
+}
+#roadmap .box p{
+    font-size: var(--normal);
+}
+.token .btn{
+    display: block;
+    text-align: center;
+}
+.token .btn button{
+    padding: .3em .6em;
+    text-transform: capitalize;
+    font-size: var(--normal);
+    cursor: pointer;
+    background: #AB624D;
+    color: #fff;
+    border: none;
+    border-radius: .5em;
+}
+
+.social{
+    padding: 1em;
+    color: #c7c6c6;
+    
+}
+.social i{
+    font-size: 3em;
+    cursor: pointer;
+    transition: .7s all ease-in-out;
+}
+.social i:hover{
+    color: #69974E;
+}
+#community{
+    height: max-content;
+}
+footer{
+    width: 100%;
+    height: auto;
+    font-size: 0.7em;
+    font-family: 'Rock Salt', cursive;
+    background: #69974E;
+    text-align: center;
+    padding: 1em 0;
+    color: #ffffffc4;
+}
